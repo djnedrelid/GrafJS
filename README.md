@@ -8,8 +8,10 @@ Samt de kjørte på det jeg vurderte som unødvendig tunge/store rammeverk.
 GrafJS støtter et konfigurerbart antall verdier og grafer. Dynamisk breddetilpasning. 
 Prosentbasert (1-100 verdier). Minimale ytelseskrav. 
  
-![Example UI](1.jpg)  
-![Example UI](2.jpg)  
-![Example UI](3.jpg)  
+![Example UI](1.jpg) 
+ 
+![Example UI](2.jpg) 
+ 
+![Example UI](3.png) 
  
 [Eksempel](https://djnedrelid.github.io/GrafJS/)
