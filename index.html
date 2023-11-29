@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="styling.css" rel="stylesheet" type="text/css">
+<script src="javascript.js" type="text/javascript"></script>
+<title></title>
+</head>
+<body>
+
+
+<div id="Grafs">
+<!-- CPU Graf -->
+<canvas id="Graf0" height="100px"></canvas>
+<canvas id="GrafTimeline0" height="18px"></canvas>
+<div id="HWinfo">
+	<canvas id="GageBox0" height="35px"></canvas><br>
+	Random data being generated as an example.
+</div><br><br>
+
+<!-- GPU Graf -->
+<canvas id="Graf1" height="100px"></canvas>
+<canvas id="GrafTimeline1" height="18px"></canvas>
+<div id="HWinfo">
+	<canvas id="GageBox1" height="35px"></canvas><br>
+	Random data being generated as an example.
+</div>
+</div>
+
+<script type="text/javascript">
+
+	// Create Graf(s).
+	GrafCreate();	// CPU
+	GrafCreate();	// GPU
+
+	// Load Graf(s) with a few graphs.
+	// GrafLoad(array(array(string Name, string Color, int LastY, int NewY)), int GrafJSIndex)
+	GrafLoad([
+		["CPU Load %","blue",0,0],
+		["CPU Temp C","red",0,0]
+	],0);
+	GrafLoad([
+		["GPU Load %","blue",0,0],
+		["GPU Temp C","red",0,0]
+	],1);
+	
+	// Random values for illustration.
+	// GrafUpdate(string ID, int value, int GrafJSIndex)
+	setInterval(function(){
+		GrafUpdate("CPU Load %",Math.round((Math.random()*100)+1),0);
+		GrafUpdate("CPU Temp C",Math.round((Math.random()*100)+1),0);
+		}, 2000
+	);
+	setInterval(function(){
+		GrafUpdate("GPU Load %",Math.round((Math.random()*100)+1),1);
+		GrafUpdate("GPU Temp C",Math.round((Math.random()*100)+1),1);
+		}, 2000
+	);
+	
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+/* Grafs (the container) */
+#Grafs {
+	width: 100%;
+}
+
+/* CPU Graf */
+#Graf0 {
+	padding: 0px;
+	margin: 0px;
+	border: 2px solid #333;
+	border-radius: 10px;
+}
+
+#GrafTimeline0 {
+	padding: 0px;
+	margin: 0px;
+}
+#GageBox0 {
+	
+}
+
+/* GPU Graf */
+#Graf1 {
+	padding: 0px;
+	margin: 0px;
+	border: 2px solid #333;
+	border-radius: 10px;
+}
+
+#GrafTimeline1 {
+	padding: 0px;
+	margin: 0px;
+}
+#GageBox1 {
+	
+}
